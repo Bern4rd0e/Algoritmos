@@ -1,0 +1,53 @@
+ALUNA: ERIKA BERNARDO LIMA
+PERÍODO: 2º
+TURMA: 2025.1
+
+1. Defina algoritmo.
+RESPOTA: Algoritmo é um conjunto de instruções, ou seja, 
+passo a passo para chegar a uma determinada ação.
+
+2. Das formas de representar algoritmos explique, justificando, 
+qual a mais adequada para o desenvolvimento de programas.
+RESPOSTA: Existem 3 formas de representar um algoritmo: 
+Textual, Fluxograma, Pseudo-código(portugol).
+Entre elas, o fluxograma é o mais atrativo e intuítivo, 
+levando em consideração que ele traça um caminho e possível solução para 
+cada ação a ser feita.
+
+3. Explique o que é eficiência de um algoritmo e porque seu estudo 
+é importante para o desenvolvimento de programas de computador.
+RESPOSTA: Eficiência é a forma que o código é executado no computador
+e como ele se comporta, sabendo o tempo de processamento que está levando 
+e memória usada, por exemplo. Um programa que usa pouca memória e gasta pouco 
+tempo para seu processamento é um programa bom. Com os programas bons, ou seja,
+com bons algoritmos, teremos um computador mais rápido e eficiente.
+
+4. Considere o conjunto de números naturais positivos N+. 
+Uma das formas de determinar se um número natural n é primo consiste em 
+contar quantos divisores tem n no conjunto N+. Escreva um algoritmo, 
+em pseudo-código, que receba um número natural n e retorne se n é primo 
+ou não. Seu algoritmo deve contar quantos divisores tem n e usar essa 
+informação para determinar se n é primo.
+RESPOSTA: q04_primo.py
+
+5. Determine o que faz o algoritmo a seguir:
+Algorithm 1 Algoritmo secreto.
+Entrada: a ∈ N+ ∧ 1 ≤ a ≤ 10^9
+--- A pertence aos números naturais positivos e A é maior igual 
+    1 e A é menor igual 10^9 ---
+
+Entrada: b ∈ N+ ∧ 1 ≤ b ≤ 10^9
+--- b pertence aos números naturais positivos e B é maior igual
+    1 e B é menor igual 10^9  ---
+
+Saída: ???
+    x ← a
+    se a < b então
+        x ← b
+    fim se
+    enquanto ¬((x mod a = 0) ∧ (x mod b = 0)) faça
+        x ← x + 1
+    fim enquanto
+    retorne x
+
+RESPOSTA: 
