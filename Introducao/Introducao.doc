@@ -46,8 +46,38 @@ Saída: ???
         x ← b
     fim se
     enquanto ¬((x mod a = 0) ∧ (x mod b = 0)) faça
+    --- Enquanto x não for divisível por ambos a e b, 
+    ele será incrementado de 1. ---
         x ← x + 1
     fim enquanto
     retorne x
 
-RESPOSTA: 
+RESPOSTA: O código verifica se X é multiplo de A e B,
+caso ele não seja, será incrementado +1 em X.
+
+6. Considere um array A de n números naturais Ai. Escreva um 
+algoritmo que determine a maior diferença absolutaum par de 
+elementos consecutivos da lista.
+O algoritmo deve retornar o valor da diferença.
+Exemplo: Para o array A = [9, 5, 8, 2, 1, 3, 5, 9, 4, 1], onde 
+os índice são numerados de 0 a 9, da esquerda para a direita, 
+a maior diferença absoluta é 6, obtida a partir dos elementos 
+consecutivos 8 e 2, nos índice 2 e 3, respectivamente.
+RESPOSTA: aq6_absoluto.py
+
+7. Considere um array A de n números naturais Ai e s um valor natural. 
+Escreva um algoritmo que verfique se existe um par de elementos em A 
+cuja soma seja s, ou seja,
+∃i, j|0 ≤ i < j < |A| =⇒ Ai + Aj = s
+RESPOSTA: q07_soma.py
+
+8. Considere um array A de n números naturais Ai e s um valor natural. 
+Escreva um algoritmo que verfique quantos pares de elementos 
+em A cuja soma seja s existem. O algoritmo deve retornar um 
+valor inteiro, a quantidade de pares cuja soma seja s
+RESPOSTA: q08_paresQuantos.py 
+
+9. Escreva um algoritmo que receba um array A de n números
+naturais e determine se o array está ordenado em ordem não 
+decrescente, ou seja, do menor para o maior.
+RESPOSTA: q09_decrescente.py
