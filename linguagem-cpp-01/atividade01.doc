@@ -1,0 +1,122 @@
+1. Sobre o programa, em C++, a seguir:
+(b) Execute o programa com os valores a seguir e escreva 
+o resultado.
+a -- b -------------------- soma
+10 - 20 ------------------- 30
+−10 - 10 ------------------ 0
+−2 - −3 ------------------- -5
+1000000000 - 1000000000 --- 2000000000
+−1000000001 - 1000000005 -- 4
+2000000000 - 1000000000 --- -1294967296
+−1212121212 - −2987654321 - -4199775533
+
+(c) Explique o motivo de cada um dos resultados obtidos.
+RESPOSTA: Os primeiros 5 cinco resultados ocorreram conforme 
+o esperado, entretanto o ultimo houve algo inesperado, issos porque
+aconteceu um overflow, pois a e b eram int, o que significa dizer 
+que ambos aceitam apenas 32 bits.
+
+(d) Pesquise e identifique correções para os resultados 
+incorretos.
+RESPOSTA; Uma forma de resolver isso é utilizando o long long 
+que ao invés de utilizar 32 bits, utiliza 64, ou seja, o dobro 
+de capacidade do int.
+
+2. Escreva um programa que leia dois lados l1 e l2 que forma 
+um retângulo, como mostrado a seguir, e mostre o perímetro do
+retângulo.
+Considere a restriçao 1 ≤ li ≤ 10^9, ou seja, tanto l1 quanto
+l2 possuem valores entre 1 e 109 (1000000000 - Umbilhão).
+RESPOSTA: Q02.cpp
+
+(a) Determine e explique qual o tipo de l1 e de l2.
+RESPOSTA; O tipo de de l1 e l2 é long, pois se ambos forem um bilhão
+e o tipo for int, haverá um overflow.
+
+(b) Escreva uma função que receba Os 2 (dois) parâmetros e 
+retorne o perímetro. Determine o tipo de dado de retorno da 
+função.
+RESPOSTA:   long perimetro(long l1, long l2){
+                return 2*(l1 + l2);
+            } Foi utilizado o tipo long, logo retornará o mesmo.
+
+(c) Escreva um conjunto com, pelo menos, 5 casos de teste e 
+monte uma tabela.
+RESPOSTA:
+l1 -- l2 -------------------- perimetro
+50 - 20 --------------------- 140
+−102 - 78 ------------------- -48
+−901 - −2 ------------------- -1806
+5000000000 - 5000000000 ----- 20000000000
+−1000000001 - 1000000005 ---- 8
+2000000000 - 2000000000 ----- -80000000000
+−3232323232 - −1234556789 --- -6711560042
+
+3. Escreva um programa que leia um número real, com 5 (cinco) 
+casas decimais, que represente o diâmetro de um círculo e 
+mostre a área a do mesmo, de acordo com a fórmula da área a 
+seguir:
+diâmetro ---------- float ---------------------- double
+1.00000 ----------- 0.78540 -------------------- 0.78540
+10.00000 ---------- 78.53975 ------------------- 78.53975
+50000.00000 ------- 1963493888.00000 ----------- 1963493750.00000
+100000.00000 ------ 7853975552.00000 ----------- 7853975000.00000
+200000.00000 ------ 31415902208.00000 ---------- 31415900000.00000
+1.56780 ----------- 1.93050 -------------------- 1.93050
+123.45678 --------- 11970.69629 ---------------- 11970.69610
+12345678.87654 ---- 119706988052480.00000 ------ 119706978009578.81250
+2000000000.88888 -- 3141590043823439872.00000 -- 3141590002792496640.00000
+
+4. Escreva um algoritmo que calcule a quantidade de postes a 
+serem colocados em uma rua. O algoritmo tem como entrada a 
+distância do início ao fim da rua, um número inteiro m, em metros,
+e a distância entre 2 (dois) postes p, também em metros. 
+Há sempre um poste no ponto 0 da rua e outro no ponto m, que é o
+final da rua. Seu programa deve mostrar a quantidade de postes a 
+serem colocados e a distância entre os dois últimos postes. 
+Lembre-se que há sempre um poste no início da rua e outro no 
+final. A distância entre cada par de postes é o valor, em metros,
+lido pelo programa, com exceção da distância entre os dois últimos 
+postes da rua.
+Exemplo: Se a rua tiver 1000 metros e a distância entre os postes 
+for de 250 metros então temos 5 postes, com distância de 250 metros 
+entre eles. Já se a rua tiver os mesmos 1000 metros e a distância 
+entre os postes for de 300 metros, a rua terá os mesmos 5 postes, 
+mas a distência entre os dois últimos postes será de 100 metros.
+RESPOSTA: Q04.cpp
+
+5. Escreva um programa leia um número natural positivo n 
+(1 ≤ n ≤ 10^9) e mostre a quantidade de divisores de n.
+• Determine o tipo da variável que deve armaenar n.
+• Escreva uma função que receba n e retorne a quantidade de divisores.
+• Faça testes e verifique se seu programa funciona corretamente.
+A seguir um algoritmo para calcular a quantidade de divisores de 
+n ∈ N+.
+RESPOSTA: Q05.cpp
+
+6. No conjunto de números naturais positivos N+, um número n é 
+considerado primo quando possui exatamente dois
+divisores no cojunto, o número 1 e o próprio n. O número 1 não é 
+considerado primo, pois possui apenas 1 divisor, que é ele mesmo. 
+O número 2 é considerado primo, pois possui exatamente 2 divisores no conjunto N
++. O 2 é também o único número par que é primo. Exemplos de números 
+primos são 3, 5, 7, 11, 13, etc. Uma das formas mais simples de 
+determinar se um número é primo é contar quantos divisores o número tem, entre os possíveis
+divisores, e verificar se a quantidade é igual a 2. Escreva uma 
+função, em C++, que rebeba um número n ∈ N+ (1 ≤ n ≤ 10^9) e 
+retorne um valor lógico (bool) informando se n é primo.
+Segue um algoritmo para determina se um número é primo:
+RESPOSTA: Q06.cpp
+
+7. Sejam a e b dois números naturais positivos, eles são considerados 
+primos entre sí se não possuírem divisores em comum além do número 
+1 (um). A seguir um algoritmo para determinar se dois números são 
+primos entre sí:
+Escreva, em C++, um programa para verificar se 2 números são primos 
+entre sí. Escreva testes para seu programa.
+RESPOSTA: Q07.cpp
+
+8. Escreva um algoritmo para determinar o MDC (máximo divisor 
+comum) entre 2 números naturais positivos a e b. Implemente e teste 
+seu algoritmo em C++.
+RESPOSTA: Q08.cpp
